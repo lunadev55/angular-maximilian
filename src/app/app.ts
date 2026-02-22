@@ -1,9 +1,14 @@
+import { Header } from './header/header';
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { User } from './user/user';
 
+// DECORATOR - ADDS METADATA AND CONFIG TO CLASSES (AND OTHER THINGS)
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    Header,
+    User
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
